@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>27791's Shitposting Centre</title>
+    <meta content="PurplSoosh's Website -=- Shitposting Centre" property="og:title"/>
+    <meta content="For all your memes. :D" property="og:description"/>
+    <link rel="stylesheet" href="https://purplsoosh.github.io/resources/main.css">
+</head>
+<body>
+<center>
+  <div class="container">
+    <div class="sections">
+      <div class="sectionTop">
+      <center>
+        27791 shitposting agency
+      </center>
+    </div>
+        <div class="sectionLeft">
+          Note: not a lot of the memes have been sent yet. Be aware!
+            <button onclick="whar(1);">Images only!</button><br>
+            <button onclick="whar(2);">Videos only!</button><br>
+            <button onclick="whar(3);">idc i just want memes</button><br>
+        </div>
+        <div class="sectionRight">
+            <marquee scrollspeed="8">Other pages!</marquee>
+            <a href="../changelog/">Changelog</a><br>
+            <a href="../servers/">Server list</a><br>
+            <a href="../../">Main page</a>
+        </div>
+    </div>
+  </div>
+</center>
+<script>
+function rand(mode) {
+    if (mode == 1) {
+        return Math.floor(Math.random() * 33) + 1;
+    } else if (mode == 2) {
+        return -1 * (Math.floor(Math.random() * 26) + 1);
+    } else if (mode == 3) {
+        const isVideo = Math.random() < 0.5;
+        if (isVideo) {
+            return -1 * (Math.floor(Math.random() * 26) + 1);
+        } else {
+            return Math.floor(Math.random() * 33) + 1;
+        }
+    }
+}
+function whar(mode) {
+    y = rand(mode);
+    location.href = "https://purplsoosh.github.io/resources/memes/" + y;
+}
+</script>
+</body>
+</html>
