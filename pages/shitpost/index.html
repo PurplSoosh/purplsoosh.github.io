@@ -33,18 +33,18 @@
 </center>
 <script>
 function rand(mode) {
-    vids = 23;
     imgs = 2;
+    vids = 23;
     if (mode == 1) {
-        return Math.floor(Math.random() * vids) + 1;
+        return Math.floor(Math.random() * imgs) + 1;
     } else if (mode == 2) {
-        return -1 * (Math.floor(Math.random() * imgs) + 1);
+        return -1 * (Math.floor(Math.random() * vids) + 1);
     } else if (mode == 3) {
         const isVideo = Math.random() < 0.5;
         if (isVideo) {
-            return -1 * (Math.floor(Math.random() * imgs) + 1);
+            return -1 * (Math.floor(Math.random() * vids) + 1);
         } else {
-            return Math.floor(Math.random() * vids) + 1;
+            return Math.floor(Math.random() * imgs) + 1;
         }
     }
 }
