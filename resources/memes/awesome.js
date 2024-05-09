@@ -8,6 +8,8 @@ function balls(vid, title, id, info) {
         "<head>" +
         "<title>ID " + id + ": " + title + "</title>" +
         "<link rel='stylesheet' href='https://purplsoosh.github.io/resources/main.css'>" +
+        "<meta property='og:video' content='" + vid + "'>" +
+	"<meta property=''content='video.movie'>" +
         "</head>" +
         "<body>" +
         "<div class='container'>" +
