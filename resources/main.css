@@ -10,6 +10,9 @@ small { font-size: 13px; }
     a {
       color: #ff00ff;
     }
+    a:visited {
+      color: #440044;
+    }
     .container {
       display: flex;
       flex-direction: column;
