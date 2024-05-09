@@ -3,7 +3,7 @@ function balls(vid, title, id, info) {
         info = "Info isn't available.";
     }
 
-    document.write(+
+    document.write(
         "<!DOCTYPE html>"+
         "<html>" +
         "<head>" +
