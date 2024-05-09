@@ -1,4 +1,4 @@
-function balls(vid, title, id, info) {
+function balls(vid, title, id, info, offensive, epileptic) {
     if (info === null || info === undefined) {
         info = "Info isn't available.";
     }
