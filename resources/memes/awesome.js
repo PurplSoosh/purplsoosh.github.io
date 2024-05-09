@@ -1,4 +1,7 @@
-function balls(vid, title, id) {
+function balls(vid, title, id, info) {
+  if (info === null) {
+    info = "";
+  };
 document.write("<!DOCTYPE html> \
 <html> \
 <head>\
@@ -22,6 +25,7 @@ document.write("<!DOCTYPE html> \
 GET A BETTER BROWSER OH MY GOD\
                 </video></center>\
  \
+               <small>"+info+"</small>\
       </div>\
       <div class=\"sectionRight\">\
             <marquee scrollspeed='8'>Other pages!</marquee>\
