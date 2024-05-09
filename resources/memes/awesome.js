@@ -1,4 +1,4 @@
-function balls(var, title, id) {
+function balls(vid, title, id) {
 document.write("<!DOCTYPE html> \
 <html> \
 <head>\
