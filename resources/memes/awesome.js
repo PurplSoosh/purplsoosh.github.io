@@ -4,6 +4,7 @@ document.write("<!DOCTYPE html> \
 <head>\
 <link rel='stylesheet' href='https://purplsoosh.github.io/resources/main.css'> \
 <meta property='og:video' content='"+vid+"'> \
+<meta property="og:type" content="video.movie">\
 </head>\
 <body>\
   <div class='container'>\
