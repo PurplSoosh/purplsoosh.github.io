@@ -16,7 +16,7 @@ function balls(vid, title, id, info) {
         "<div class='container'>" +
         "<div class='sectionTop'>" +
         "<center>" +
-        "Shitpost Centre - " + title + "<br>"
+        "Shitpost Centre - " + title + "<br>" +
 	if (id < 0) {
 	    "<a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + ">Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + ">Next</a>" +
 	} else {
