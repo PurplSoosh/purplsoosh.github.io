@@ -48,3 +48,4 @@ htmlContent +=
     "</html>";
 
 document.write(htmlContent);
+}
