@@ -68,14 +68,14 @@ function whar(mode) {
         var id = parseInt(document.getElementById('idInput').value);
         console.log("id:", id);
         if (id && id >= -vids && id <= imgs) {
-            window.href = "https://purplsoosh.github.io/resources/memes/" + id + ".html";
+            window.location.href = "https://purplsoosh.github.io/resources/memes/" + id + ".html";
         } else {
             document.getElementById("idInput").innerHTML = "";
             document.getElementById("something").innerHTML = "Invalid ID!";
            setTimeout(function() {document.getElementById("something").innerHTML = "Type in ID:";}, 2000)
         }
     } else {
-        window.href = "https://purplsoosh.github.io/resources/memes/" + rand(mode) + ".html";
+        window.location.href = "https://purplsoosh.github.io/resources/memes/" + rand(mode) + ".html";
     }
 }
 </script></body>
