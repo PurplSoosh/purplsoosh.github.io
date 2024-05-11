@@ -22,7 +22,13 @@ if (id < 0) {
 } else {
     htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Next</a>";
 }
-
+htmlContent += "<br>";
+    if (epileptic === true) {
+        htmlContent += "Epileptic content ahead! <br>";
+    } 
+        if (offensice === true) {
+        htmlContent += "Offensive content ahead! <br>";
+    } 
 htmlContent +=
     "</center>" +
     "</div>" +
