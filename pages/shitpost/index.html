@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html><head>
     <title>27791's Shitposting Centre</title>
     <meta content="PurplSoosh's Website -=- Shitposting Centre" property="og:title">
@@ -64,18 +65,16 @@ function rand(mode) {
 }
 function whar(mode) {
     if (mode == 4) {
-        console.log("whar mode 4");
         var id = parseInt(document.getElementById('idInput').value);
-        console.log("id:", id);
         if (id && id >= -vids && id <= imgs) {
-            window.location.href = "https://purplsoosh.github.io/resources/memes/" + id + ".html";
+            window.href = "https://purplsoosh.github.io/resources/memes/" + id + ".html";
         } else {
             document.getElementById("idInput").innerHTML = "";
             document.getElementById("something").innerHTML = "Invalid ID!";
            setTimeout(function() {document.getElementById("something").innerHTML = "Type in ID:";}, 2000)
         }
     } else {
-        window.location.href = "https://purplsoosh.github.io/resources/memes/" + rand(mode) + ".html";
+        window.href = "https://purplsoosh.github.io/resources/memes/" + rand(mode) + ".html";
     }
 }
 </script></body>
