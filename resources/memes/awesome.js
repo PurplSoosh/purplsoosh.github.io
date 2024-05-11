@@ -35,7 +35,7 @@ htmlContent +=
     "<div class='sections'>" +
     "<div class='sectionLeft'>" +
     "<center>" +
-    "<video width='640' height='480' controls='' style='width:100%; height:0; padding-bottom:66%>" +
+    "<video width='640' height='480' controls='' style='width:40%; height:0; padding-bottom:66%>" +
     "<source src='" + vid + "' type='video/mp4'>" +
     "GET A BETTER BROWSER OH MY GOD" +
     "</video></center>" +
