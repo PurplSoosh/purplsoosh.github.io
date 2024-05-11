@@ -1,42 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <title>27791's Shitposting Centre</title>
-    <meta content="PurplSoosh's Website -=- Shitposting Centre" property="og:title"/>
-    <meta content="For all your memes. :D" property="og:description"/>
+    <meta content="PurplSoosh's Website -=- Shitposting Centre" property="og:title">
+    <meta content="For all your memes. :D" property="og:description">
     <link rel="stylesheet" href="https://purplsoosh.github.io/resources/main.css">
-</head>
-<body>
+    <style>
+        #idInput {
+            width: 100px; 
+            height: 20px; 
+            border: 1px solid #ffddff;
+            border-radius: 5px; 
+            background-color: #cc77cc;
+            color: #ffffff;
+            box-sizing: border-box; 
+        }
+    </style>
+</head><body>
 <center>
   <div class="container">
-            <div class="sectionTop">
+    <div class="sectionTop">
       <center>
         27791 shitposting agency
       </center>
     </div>
       
     <div class="sections">
-        <div class="sectionLeft">
-          Note: not a lot of the memes have been sent yet. Be aware!<br>
-            <button onclick="whar(1);">Images only!</button><br>
-            <button onclick="whar(2);">Videos only!</button><br>
-            <button onclick="whar(3);">idc i just want memes</button><br>
-        </div>
-        <div class="sectionRight">
-            <marquee scrollspeed="8">Other pages!</marquee>
-            <a href="../changelog/">Changelog</a><br>
-            <a href="../servers/">Server list</a><br>
-            <a href="../../">Main page</a>
-        </div>
+      <div class="sectionLeft">
+        shitfest.net 2.0? not sure. but i guess.....<br>
+        <button type="button" onclick="whar(1);">Images only!</button><br>
+        <button type="button" onclick="whar(2);">Videos only!</button><br>
+        <button type="button" onclick="whar(3);">idc i just want memes</button><br>
+        <label for="idInput" id="something">Type in ID:</label>
+        <input type="text" id="idInput"><br>
+        <button type="button" onclick="whar(4);">Submit</button><br>
+      </div>
+      <div class="sectionRight">
+        <marquee scrollspeed="8">Other pages!</marquee>
+        <a href="../changelog/">Changelog</a><br>
+        <a href="../servers/">Server list</a><br>
+        <a href="../../">Main page</a>
+      </div>
     </div>
   </div>
 </center>
 <script>
+var imgs = 2; // Define imgs and vids here with default values
+var vids = 35;
+
 function rand(mode) {
-    imgs = 2;
-    vids = 35;
-    offensive = [28, 29];
-    epileptic = [32];
+    var offensive = [28, 29];
+    var epileptic = [32];
     if (mode == 1) {
         return Math.floor(Math.random() * imgs) + 1;
     } else if (mode == 2) {
@@ -51,9 +63,20 @@ function rand(mode) {
     }
 }
 function whar(mode) {
-    y = rand(mode);
-    location.href = "https://purplsoosh.github.io/resources/memes/" + y;
+    if (mode == 4) {
+        console.log("whar mode 4");
+        var id = parseInt(document.getElementById('idInput').value);
+        console.log("id:", id);
+        if (id && id >= -vids && id <= imgs) {
+            window.href = "https://purplsoosh.github.io/resources/memes/" + id + ".html";
+        } else {
+            document.getElementById("idInput").innerHTML = "";
+            document.getElementById("something").innerHTML = "Invalid ID!";
+           setTimeout(function() {document.getElementById("something").innerHTML = "Type in ID:";}, 2000)
+        }
+    } else {
+        window.href = "https://purplsoosh.github.io/resources/memes/" + rand(mode) + ".html";
+    }
 }
-</script>
-</body>
+</script></body>
 </html>
