@@ -26,7 +26,7 @@ htmlContent += "<br>";
     if (epileptic === true) {
         htmlContent += "Epileptic content ahead! <br>";
     } 
-        if (offensice === true) {
+        if (offensive === true) {
         htmlContent += "Offensive content ahead! <br>";
     } 
 htmlContent +=
