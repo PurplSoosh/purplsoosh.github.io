@@ -25,9 +25,11 @@ var htmlContent = "<!DOCTYPE html>"+
 
 if (id < 0) {
     htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Next</a>";
-} else {
+} else if (id != 0) {
     htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Next</a>";
-}
+} else {
+    htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/-1'>Negative (Vids)</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/1'>Positive (Imgs)</a>";
+};
 
     // epileptic / offensive warnings
 htmlContent +=
