@@ -13,10 +13,12 @@ var htmlContent = "<!DOCTYPE html>"+
     "<html>" +
     "<head>" +
     "<title>ID " + id + ": " + title + "</title>" +
-    "<link rel='stylesheet' href='https://purplsoosh.github.io/resources/main.css'>" +
-    "<meta property='og:video' content='" + vid + "'>" +
-    "<meta property=''content='video.movie'>" +
-    "</head>" +
+    "<link rel='stylesheet' href='https://purplsoosh.github.io/resources/main.css'>"
+
+    if (id <= 0) {
+    htmlContent += "<meta property='og:video' content='" + vid + "'>" +
+    "<meta property=''content='video.movie'>" };
+    htmlContent += "</head>" +
     "<body>" +
     "<div class='container'>" +
     "<div class='sectionTop'>" +
@@ -47,11 +49,16 @@ htmlContent += "</center>" +
     "<div class='sections'>" +
     "<div class='sectionLeft'>" +
     "<center>" +
-    "<div class='ohio'>" +
-    "<video width='640' height='480' controls=''>" +
+    "<div class='ohio'>"
+    if (id <= 0) {
+    htmlContent += "<video width='640' height='480' controls=''>" +
     "<source src='" + vid + "' type='video/mp4'>" +
     "GET A BETTER BROWSER OH MY GOD" +
-    "</video></div></center>" +
+    "</video>"
+    } else {
+        htmlContent += '<img src="https://purplsoosh.github.io/resources/memes/1/' + vid + '" alt=' + title + '>'
+    }
+    htmlContent += "</div></center>" +
     "<small>" + info + "</small>" +
     "</div>" +
 
