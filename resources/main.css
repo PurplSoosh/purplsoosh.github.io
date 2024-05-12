@@ -5,6 +5,7 @@ small { font-size: 13px; }
   color:#ffffff;
   font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
 }
+/*
     h7 {
 	    background:linear-gradient(to bottom, #c300ff, #e4c7ed); 
 	    border-radius:25px; 
@@ -12,6 +13,7 @@ small { font-size: 13px; }
 	    border: 10px; 
 	    border-color: #e1c7f0;
     }
+*/
     body {
       font-family: arial; 
       background-color: #300030;
