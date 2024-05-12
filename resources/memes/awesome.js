@@ -32,7 +32,6 @@ if (id < 0) {
     // epileptic / offensive warnings
 htmlContent +=
     "<h3>" +
-    "<br>";
     if (epileptic === true) {
         htmlContent += "Epileptic content ahead! <br>";
     } 
