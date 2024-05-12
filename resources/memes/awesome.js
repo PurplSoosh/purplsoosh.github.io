@@ -1,13 +1,4 @@
-function idea() {
-    var id = parseInt(document.getElementById('idInput').value);
-        if (id && id >= -vids && id <= imgs) {
-            window.location.href = "https://purplsoosh.github.io/resources/memes/" + id;
-        } else {
-            document.getElementById("idInput").innerHTML = "";
-            document.getElementById("something").innerHTML = "Invalid ID!";
-           setTimeout(function() {document.getElementById("something").innerHTML = "Type in ID:";}, 2000)
-        }
-};
+
 
 function balls(vid, title, id, info, offensive, epileptic) {
 
@@ -37,12 +28,6 @@ if (id < 0) {
 } else {
     htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Next</a>";
 }
-
-    // input id for another meme!
-htmlContent +=
-     '<label for="idInput" id="something">Type in ID:</label>' +
-        '<input type="text" id="idInput">' +
-        '<button type="button" onclick="idea();">Submit</button><br>' +
 
     // epileptic / offensive warnings
 htmlContent +=
