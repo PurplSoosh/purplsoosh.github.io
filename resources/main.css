@@ -1,7 +1,10 @@
 small { font-size: 13px; }
     tiny { font-size: 9px; }
-    1px { font-size: 1px; }
-    
+    code {
+  background-color:#444444;
+  color:#ffffff;
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
     body {
       font-family: arial; 
       background-color: #300030;
