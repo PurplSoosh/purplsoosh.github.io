@@ -56,7 +56,7 @@ htmlContent += "</center>" +
     "GET A BETTER BROWSER OH MY GOD" +
     "</video>"
     } else {
-        htmlContent += '<img src="https://purplsoosh.github.io/resources/memes/1/' + vid + '" alt=' + title + ' width="640" height="480">'
+        htmlContent += '<img width="640" height="640" src="https://purplsoosh.github.io/resources/memes/1/' + vid + '" alt=' + title + '>'
     }
     htmlContent += "</div></center>" +
     "<small>" + info + "</small>" +
