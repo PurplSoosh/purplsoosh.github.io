@@ -33,14 +33,14 @@ if (id < 0) {
 
     // epileptic / offensive warning
     if (epileptic === true || offensive === true) {
-        htmlContent += "<h3>" +
+        htmlContent += "<h3>";
         if (epileptic === true) {
             htmlContent += "Epileptic content ahead! <br>";
         } 
             if (offensive === true) {
             htmlContent += "Offensive content ahead! <br>";
         } 
-    htmlContent += "</h3>" 
+    htmlContent += "</h3>";
     }
 htmlContent += "</center>" +
     "</div>" +
