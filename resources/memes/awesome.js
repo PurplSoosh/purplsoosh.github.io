@@ -1,9 +1,24 @@
+function idea() {
+    var id = parseInt(document.getElementById('idInput').value);
+        if (id && id >= -vids && id <= imgs) {
+            window.location.href = "https://purplsoosh.github.io/resources/memes/" + id;
+        } else {
+            document.getElementById("idInput").innerHTML = "";
+            document.getElementById("something").innerHTML = "Invalid ID!";
+           setTimeout(function() {document.getElementById("something").innerHTML = "Type in ID:";}, 2000)
+        }
+};
+
 function balls(vid, title, id, info, offensive, epileptic) {
+
+    // default value for info
     if (info === null || info === undefined) {
         info = "Info isn't available.";
-    }
+    };
 
 var htmlContent = "<!DOCTYPE html>"+
+
+    // head and shit like dat
     "<html>" +
     "<head>" +
     "<title>ID " + id + ": " + title + "</title>" +
@@ -15,21 +30,34 @@ var htmlContent = "<!DOCTYPE html>"+
     "<div class='container'>" +
     "<div class='sectionTop'>" +
     "<center>" +
-    "Shitpost Centre - " + title + "<br>";
+    "(" + id + ") Shitpost Centre - " + title + "<br>";
 
 if (id < 0) {
     htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Next</a>";
 } else {
     htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Next</a>";
 }
-htmlContent += "<br>";
+
+    // input id for another meme!
+htmlContent +=
+     '<label for="idInput" id="something">Type in ID:</label>' +
+        '<input type="text" id="idInput">' +
+        '<button type="button" onclick="idea();">Submit</button><br>' +
+
+    // epileptic / offensive warnings
+htmlContent +=
+    "<h3>" +
+    "<br>";
     if (epileptic === true) {
         htmlContent += "Epileptic content ahead! <br>";
     } 
         if (offensive === true) {
         htmlContent += "Offensive content ahead! <br>";
     } 
+    
+    // sections left and right
 htmlContent +=
+    "</h3>" +
     "</center>" +
     "</div>" +
     "<div class='sections'>" +
@@ -42,6 +70,8 @@ htmlContent +=
     "</video></div></center>" +
     "<small>" + info + "</small>" +
     "</div>" +
+
+    // section right
     "<div class='sectionRight'>" +
     "<marquee scrollspeed='8'>Other pages!</marquee>" +
     "<a href='../../../pages/changelog/'>Changelog</a><br>" +
