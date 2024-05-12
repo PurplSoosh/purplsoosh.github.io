@@ -31,20 +31,18 @@ if (id < 0) {
     htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/-1'>Negative (Vids)</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/1'>Positive (Imgs)</a>";
 };
 
-    // epileptic / offensive warnings
-htmlContent +=
-    "<h3>" +
-    if (epileptic === true) {
-        htmlContent += "Epileptic content ahead! <br>";
-    } 
-        if (offensive === true) {
-        htmlContent += "Offensive content ahead! <br>";
-    } 
-    
-    // sections left and right
-htmlContent +=
-    "</h3>" +
-    "</center>" +
+    // epileptic / offensive warning
+    if (epileptic === true || offensive === true) {
+        htmlContent += "<h3>" +
+        if (epileptic === true) {
+            htmlContent += "Epileptic content ahead! <br>";
+        } 
+            if (offensive === true) {
+            htmlContent += "Offensive content ahead! <br>";
+        } 
+    htmlContent += "</h3>" 
+    }
+htmlContent += "</center>" +
     "</div>" +
     "<div class='sections'>" +
     "<div class='sectionLeft'>" +
