@@ -5,10 +5,6 @@ small { font-size: 13px; }
   color:#ffffff;
   font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
 }
-        button {
-             background-color: #cc77cc; /* no gradient */
-            background-color: linear-gradient(to right, #ee99ee, #cc66cc);
-        }
 /*
     h7 {
 	    background:linear-gradient(to bottom, #c300ff, #e4c7ed); 
@@ -66,3 +62,11 @@ small { font-size: 13px; }
       font-size: 130%;
       color: #780078;
     }
+        button {
+             background-color: #cc77cc; /* no gradient */
+		color: #ffffff;
+            background-color: linear-gradient(to right, #ee99ee, #cc66cc);
+        }
+button a:hover {
+	color: #eeeeee;
+}
