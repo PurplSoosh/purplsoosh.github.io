@@ -65,7 +65,7 @@ small { font-size: 13px; }
         button {
             border-radius: 25px;
   background-color: #cc77cc;
-  padding: 20px;
+  padding: 8px;
 		color: #ffffff;
 		display: flex;
             background-color: linear-gradient(to right, #ee99ee, #cc66cc);
