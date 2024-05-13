@@ -31,7 +31,6 @@ small { font-size: 13px; }
       align-items: center;
       background-color: #500050;
       border-radius: 11px;
-	    width: 90%;
     }
     .sections {
       display: flex;
@@ -64,10 +63,10 @@ small { font-size: 13px; }
       color: #780078;
     }
         button {
-             background-color: #cc77cc; /* no gradient */
+            border-radius: 25px;
+  background-color: #cc77cc;
+  padding: 20px;
 		color: #ffffff;
 		display: flex;
-      flex-direction: column;
-      align-items: center;
             background-color: linear-gradient(to right, #ee99ee, #cc66cc);
         }
