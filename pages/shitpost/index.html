@@ -99,9 +99,9 @@
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);
     });
-	window.onload = function() {
+	setInterval(function() {
 		document.getElementById("imgs").innerHTML = imgs;
 		document.getElementById("vids").innerHTML = vids;
-	}
+	}, 100);
 </script></body>
 </html>
