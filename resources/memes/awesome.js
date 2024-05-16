@@ -72,7 +72,7 @@ htmlContent += "</center>" +
     "</div>" +
     "</div>" +
     "</div>" +
-    "<script src='https://purplsoosh.github.io/resources/memes/moreshit.js'>" +
+    "<script src='https://purplsoosh.github.io/resources/memes/moreshit.js'></script>" +
     "</body>" +
     "</html>";
 
