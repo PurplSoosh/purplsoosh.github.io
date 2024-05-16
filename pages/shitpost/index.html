@@ -46,53 +46,57 @@
   </div>
 </center>
 <script>
-fetch('https://purplsoosh.github.io/resources/data.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    var imgs = data.imgs;
-    var vids = data.vids;
-    var offensive = data.offensive;
-    var epileptic = data.epileptic;
+  var imgs;
+  var vids;
+  var offensive;
+  var epileptic;
+	
 
-	  // Functions
-    function rand(mode) {
-        if (mode == 1) {
-            return Math.floor(Math.random() * imgs) + 1;
-        } else if (mode == 2) {
-            return -1 * (Math.floor(Math.random() * vids) + 1);
-        } else if (mode == 3) {
-            const isVideo = Math.random() < 0.5;
-            if (isVideo) {
-                return -1 * (Math.floor(Math.random() * vids) + 1);
-            } else {
-                return Math.floor(Math.random() * imgs) + 1;
-            }
-        }
-    }
-    
-    function whar(mode) {
-        if (mode == 4) {
-            var id = parseInt(document.getElementById('idInput').value);
-            if (id && id >= -vids && id <= imgs) {
-                window.location.href = "https://purplsoosh.github.io/resources/memes/" + id;
-            } else {
-				console.warn('Invalid ID: ' + id + ' (IDs ' + imgs + ' to ' + vids * -1 + ' are the only IDs allowed!');
-                document.getElementById("idInput").value = "";
-                document.getElementById("something").innerHTML = "Invalid ID!";
-               setTimeout(function() {document.getElementById("something").innerHTML = "Type in ID:";}, 2000)
-            }
+  function whar(mode) {
+    if (mode == 4) {
+        var id = parseInt(document.getElementById('idInput').value);
+        if (id && id >= -vids && id <= imgs) {
+            window.location.href = "https://purplsoosh.github.io/resources/memes/" + id;
         } else {
-            window.location.href = "https://purplsoosh.github.io/resources/memes/" + rand(mode);
+            console.warn('Invalid ID: ' + id + ' (IDs ' + imgs + ' to ' + vids * -1 + ' are the only IDs allowed!');
+            document.getElementById("idInput").value = "";
+            document.getElementById("something").innerHTML = "Invalid ID!";
+            setTimeout(function() {document.getElementById("something").innerHTML = "Type in ID:";}, 2000)
         }
+    } else {
+        window.location.href = "https://purplsoosh.github.io/resources/memes/" + rand(mode);
     }
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+  };
+	      function rand(mode) {
+          if (mode == 1) {
+              return Math.floor(Math.random() * imgs) + 1;
+          } else if (mode == 2) {
+              return -1 * (Math.floor(Math.random() * vids) + 1);
+          } else if (mode == 3) {
+              const isVideo = Math.random() < 0.5;
+              if (isVideo) {
+                  return -1 * (Math.floor(Math.random() * vids) + 1);
+              } else {
+                  return Math.floor(Math.random() * imgs) + 1;
+              }
+          }
+      };
+
+  fetch('https://purplsoosh.github.io/resources/data.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      imgs = data.imgs;
+      vids = data.vids;
+      offensive = data.offensive;
+      epileptic = data.epileptic;
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
 </script></body>
 </html>
