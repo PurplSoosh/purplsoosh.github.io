@@ -2,5 +2,12 @@
   "imgs": 5,
   "vids": 64,
   "gifs": 0,
+      "offensive": [
+        28,
+        29
+    ],
+    "epileptic": [
+        32
+    ],
   "comment": "What the sigma?"
 }
