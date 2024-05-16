@@ -56,7 +56,7 @@
   function whar(mode) {
     if (mode == 4) {
         var id = parseInt(document.getElementById('idInput').value);
-        if (id && id >= -vids && id <= imgs) {
+        if (id && id >= -vids && id <= imgs || id == 0) {
             window.location.href = "https://purplsoosh.github.io/resources/memes/" + id;
         } else {
             console.warn('Invalid ID: ' + id + ' (IDs ' + imgs + ' to ' + vids * -1 + ' are the only IDs allowed!)');
