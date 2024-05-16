@@ -13,7 +13,7 @@ var htmlContent = "<!DOCTYPE html>"+
     "<html>" +
     "<head>" +
     "<title>ID " + id + ": " + title + "</title>" +
-    "<link rel='stylesheet' href='https://purplsoosh.github.io/resources/main.css'>"
+    "<link rel='stylesheet' href='https://purplsoosh.github.io/resources/main.css'>";
 
     if (id <= 0) {
     htmlContent += "<meta property='og:video' content='" + vid + "'>" +
@@ -25,12 +25,12 @@ var htmlContent = "<!DOCTYPE html>"+
     "<center>" +
     "(" + id + ") Shitpost Centre - " + title + "<br>";
 
-if (id < 0) {
+if (id % 1 != 0) {
+	htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + Math.floor(id) + "'>Main meme</a> --- <a href ='../../../pages/shitpost'>Reroll</a>";
+} else if (id < 0) {
     htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Next</a>";
-} else if (id != 0) {
-    htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Next</a>";
 } else {
-    htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/-1'>Negative (Vids)</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/1'>Positive (Imgs)</a>";
+    htmlContent += "<a href='https://purplsoosh.github.io/resources/memes/" + (id - 1) + "'>Previous</a> --- <a href='../../../pages/shitpost/'>Reroll</a> --- <a href='https://purplsoosh.github.io/resources/memes/" + (id + 1) + "'>Next</a>";
 };
 
     // epileptic / offensive warning
@@ -72,6 +72,7 @@ htmlContent += "</center>" +
     "</div>" +
     "</div>" +
     "</div>" +
+    "<script src='https://purplsoosh.github.io/resources/memes/moreshit.js'>" +
     "</body>" +
     "</html>";
 
