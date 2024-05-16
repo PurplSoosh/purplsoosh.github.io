@@ -14,6 +14,14 @@ small { font-size: 13px; }
 	    border-color: #e1c7f0;
     }
 */
+.ohio {
+    width: 100%;
+}
+
+.ohio video {
+    width: 100%;
+    height: auto;
+}
     body {
       font-family: arial; 
       background-color: #300030;
