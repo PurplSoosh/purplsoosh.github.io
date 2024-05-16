@@ -51,7 +51,7 @@ htmlContent += "</center>" +
     "<center>" +
     "<div class='ohio'>"
     if (id <= 0) {
-    htmlContent += "<video width='640' height='480' controls=''>" +
+    htmlContent += "<video controls=''>" + // width='640' height='480'
     "<source src='" + vid + "' type='video/mp4'>" +
     "GET A BETTER BROWSER OH MY GOD" +
     "</video>"
