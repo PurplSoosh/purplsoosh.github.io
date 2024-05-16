@@ -47,7 +47,7 @@
 </center>
 <script>
 var imgs = 2;
-var vids = 57;
+var vids = 63;
 
 function rand(mode) {
     var offensive = [28, 29];
@@ -71,7 +71,7 @@ function whar(mode) {
         if (id && id >= -vids && id <= imgs) {
             window.location.href = "https://purplsoosh.github.io/resources/memes/" + id;
         } else {
-            document.getElementById("idInput").innerHTML = "";
+            document.getElementById("idInput").value = "";
             document.getElementById("something").innerHTML = "Invalid ID!";
            setTimeout(function() {document.getElementById("something").innerHTML = "Type in ID:";}, 2000)
         }
