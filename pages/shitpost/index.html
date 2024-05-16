@@ -58,11 +58,8 @@ fetch('https://purplsoosh.github.io/resources/data.json')
     var vids = data.vids;
     var offensive = data.offensive;
     var epileptic = data.epileptic;
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
-// Functions
+
+	  // Functions
     function rand(mode) {
         if (mode == 1) {
             return Math.floor(Math.random() * imgs) + 1;
@@ -93,5 +90,9 @@ fetch('https://purplsoosh.github.io/resources/data.json')
             window.location.href = "https://purplsoosh.github.io/resources/memes/" + rand(mode);
         }
     }
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
 </script></body>
 </html>
