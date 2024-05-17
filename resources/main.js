@@ -15,3 +15,7 @@ class DPRCMarqueeElement extends HTMLElement {
 // Register the custom elements
 customElements.define('dprc-center', DPRCCenterElement);
 customElements.define('dprc-marquee', DPRCMarqueeElement);
+
+window.onload = function() {
+  document.getElementById("needJS").innerHTML = "";
+};
