@@ -5,32 +5,6 @@ small { font-size: 13px; }
   color:#ffffff;
   font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
 }
-/* importing deprecated classes */
-    dprc-center {
-	    text-align:center;
-    }
-
-dprc-marquee {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-dprc-marquee > span {
-  display: inline-block;
-  animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-/* custom classes named "ex" */
-    ex-code {
-   background-color:#444444;
-  color:#ffffff;
-  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
-}
 /*
     ex-h7 {
 	    background:linear-gradient(to bottom, #c300ff, #e4c7ed); 
@@ -52,6 +26,7 @@ dprc-marquee > span {
       font-family: arial; 
       background-color: #300030;
       color: #ffffff;
+      text-align: center;
     }
     a {
       color: #ff00ff;
