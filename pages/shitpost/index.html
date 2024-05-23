@@ -85,6 +85,7 @@
   };
 
 window.onload = function() {
+	function chocolate() {
   fetch('https://purplsoosh.github.io/resources/data.json')
     .then(response => {
       if (!response.ok) {
@@ -105,6 +106,8 @@ window.onload = function() {
     .catch(error => {
       console.error('fetch skill issue:', error);
     });
+	};
+	chocolate();
 };
 </script></body>
 </html>
