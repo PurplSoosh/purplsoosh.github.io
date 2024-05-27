@@ -95,13 +95,13 @@ small { font-size: 13px; }
     width: 100%; 
     padding: 0;
   }
-  .ohio video {
-        aspect-ratio: 9 / 16;
-    }
   .sectionLeft, .sectionRight {
     width: 90%;
     border-radius: 11px;
     padding: 10px; 
     margin: auto;
   }
+  .ohio video {
+        aspect-ratio: 9 / 16;
+    }
 }
