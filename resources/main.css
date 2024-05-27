@@ -99,7 +99,7 @@ small { font-size: 13px; }
         aspect-ratio: 9 / 16;
     }
   .sectionLeft, .sectionRight {
-    width: 100%;
+    width: 90%;
     border-radius: 11px;
     padding: 10px; 
   }
