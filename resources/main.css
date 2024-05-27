@@ -102,5 +102,6 @@ small { font-size: 13px; }
     width: 90%;
     border-radius: 11px;
     padding: 10px; 
+    margin: auto;
   }
 }
