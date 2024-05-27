@@ -80,3 +80,16 @@ small { font-size: 13px; }
 		display: flex;
             background-color: linear-gradient(to right, #ee99ee, #cc66cc);
         }
+
+
+/* mobile users i guess */
+@media screen and (max-width: 600px) {
+  .sections {
+    flex-direction: column;
+    width: 100%; 
+  }
+  
+  .sectionLeft, .sectionRight {
+    width: 100%;
+  }
+}
