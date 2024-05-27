@@ -21,6 +21,7 @@ small { font-size: 13px; }
 .ohio video {
     width: 100%;
     height: auto;
+    aspect-ratio: 16 / 9;
 }
     body {
       font-family: arial; 
