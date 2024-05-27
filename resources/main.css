@@ -87,9 +87,14 @@ small { font-size: 13px; }
   .sections {
     flex-direction: column;
     width: 100%; 
+    padding: 0;
   }
-  
+  .ohio video {
+        aspect-ratio: 9 / 16;
+    }
   .sectionLeft, .sectionRight {
     width: 100%;
+    margin: 0;
+    padding: 10px;
   }
 }
