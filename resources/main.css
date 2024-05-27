@@ -22,6 +22,12 @@ small { font-size: 13px; }
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+    /* make these lines kts if not needed */
+    background-color: #787878;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 11px;
 }
     body {
       font-family: arial; 
@@ -94,7 +100,7 @@ small { font-size: 13px; }
     }
   .sectionLeft, .sectionRight {
     width: 100%;
-    margin: 0;
-    padding: 10px;
+    border-radius: 11px;
+    padding: 10px; 
   }
 }
